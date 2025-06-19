@@ -178,10 +178,4 @@ Then verify in AWS Console that no resources remain to avoid unexpected charges.
 ✅ CloudWatch Logging  
 ✅ AWS CLI Commands
 
----
-
-## 🔄 Next Steps
-
-- Try deploying a different Docker image  
-- Modify the security group to allow other ports  
 
