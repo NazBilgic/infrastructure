@@ -1,7 +1,9 @@
 
 **Deploy a containerized NGINX web server using Terraform and ECS Fargate**
 
----
+
+The goal of this project is to deploy a containerized application (NGINX) on AWS using a fully automated and serverless infrastructure with Terraform and ECS Fargate.
+It demonstrates how to provision cloud resources as code, without managing any servers.
 
 ## 🌐 What This Creates
 
