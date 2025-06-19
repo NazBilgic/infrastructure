@@ -47,7 +47,7 @@ aws sts get-caller-identity
 
 ---
 
-### ✅ Step 2: Customize Your Settings
+###  Step 2: Customize Your Settings
 
 ```bash
 # Edit terraform.tfvars
