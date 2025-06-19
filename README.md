@@ -1,5 +1,5 @@
 
-**Deploy a containerized NGINX web server using Terraform and ECS Fargate**
+**Deploying a containerized NGINX web server using Terraform and ECS Fargate**
 
 
 The goal of this project is to deploy a containerized application (NGINX) on AWS using a fully automated and serverless infrastructure with Terraform and ECS Fargate.
@@ -119,23 +119,23 @@ aws logs describe-log-streams --log-group-name $LOG_GROUP
 
 ---
 
-## 🐞 Troubleshooting
+## Troubleshooting
 
-### ❌ Error: `NoCredentialsError`
+### Error: `NoCredentialsError`
 
 - Run `aws configure`
 - Confirm with `aws sts get-caller-identity`
 
 ---
 
-### ❌ Error: `UnauthorizedOperation`
+### Error: `UnauthorizedOperation`
 
 - Attach `AdministratorAccess` policy to your IAM user
 - Ensure ECS, EC2, IAM, and CloudWatch permissions are present
 
 ---
 
-### ❌ Task Keeps Stopping
+### Task Keeps Stopping
 
 - Check logs in CloudWatch
 - Verify container image is valid and accessible
@@ -143,7 +143,7 @@ aws logs describe-log-streams --log-group-name $LOG_GROUP
 
 ---
 
-### ❌ Website Not Loading
+### Website Not Loading
 
 - Wait 2–3 minutes for app to start
 - Confirm public IP assignment
@@ -151,7 +151,7 @@ aws logs describe-log-streams --log-group-name $LOG_GROUP
 
 ---
 
-### ❌ Error: `ResourceAlreadyExistsException`
+### Error: `ResourceAlreadyExistsException`
 
 - Edit `terraform.tfvars` to use a unique cluster name
 - Or destroy existing infra: `terraform destroy`
@@ -169,7 +169,7 @@ Then verify in AWS Console that no resources remain to avoid unexpected charges.
 
 ---
 
-## 🎓 What You Learned
+##  What You Learned
 
 ✅ Infrastructure as Code with Terraform  
 ✅ AWS ECS Fargate (serverless containers)  
