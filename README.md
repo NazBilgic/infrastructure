@@ -5,7 +5,7 @@
 The goal of this project is to deploy a containerized application (NGINX) on AWS using a fully automated and serverless infrastructure with Terraform and ECS Fargate.
 It demonstrates how to provision cloud resources as code, without managing any servers.
 
-## 🌐 What This Creates
+## What This Creates
 
 - ECS Fargate cluster (serverless containers)
 - ECS service running NGINX web server
@@ -15,7 +15,7 @@ It demonstrates how to provision cloud resources as code, without managing any s
 
 ---
 
-## 🧰 Prerequisites
+## Prerequisites
 
 - [AWS CLI](https://aws.amazon.com/cli/) installed and configured  
 - [Terraform](https://www.terraform.io/downloads.html) installed  
@@ -23,9 +23,9 @@ It demonstrates how to provision cloud resources as code, without managing any s
 
 ---
 
-## 🛠 Step-by-Step Deployment
+##  Step-by-Step Deployment
 
-### ✅ Step 1: Set Up AWS CLI
+### Step 1: Set Up AWS CLI
 
 ```bash
 # macOS
@@ -58,7 +58,7 @@ cluster_name = "naz-devops-cluster"
 
 ---
 
-### ✅ Step 3: Deploy Infrastructure
+###  Step 3: Deploy Infrastructure
 
 ```bash
 # Initialize Terraform
@@ -74,7 +74,7 @@ terraform apply
 
 ---
 
-### ✅ Step 4: Get the Public IP
+###  Step 4: Get the Public IP
 
 ```bash
 # Store outputs into variables
@@ -101,7 +101,7 @@ aws ecs describe-tasks \
 
 ---
 
-### ✅ Step 5: Test Your Application
+###  Step 5: Test Your Application
 
 - Copy the public IP from step 4  
 - Open in browser:  
@@ -110,7 +110,7 @@ aws ecs describe-tasks \
 
 ---
 
-### ✅ Step 6: View Logs in CloudWatch
+###  Step 6: View Logs in CloudWatch
 
 ```bash
 LOG_GROUP=$(terraform output -raw log_group_name)
@@ -158,7 +158,7 @@ aws logs describe-log-streams --log-group-name $LOG_GROUP
 
 ---
 
-## 🧹 Clean Up (Important!)
+##  Clean Up (Important!)
 
 ```bash
 terraform destroy
@@ -171,11 +171,11 @@ Then verify in AWS Console that no resources remain to avoid unexpected charges.
 
 ##  What You Learned
 
-✅ Infrastructure as Code with Terraform  
-✅ AWS ECS Fargate (serverless containers)  
-✅ IAM Roles & Permissions  
-✅ Security Groups & VPC  
-✅ CloudWatch Logging  
-✅ AWS CLI Commands
+ Infrastructure as Code with Terraform  
+ AWS ECS Fargate (serverless containers)  
+ IAM Roles & Permissions  
+ Security Groups & VPC  
+ CloudWatch Logging  
+ AWS CLI Commands
 
 
